@@ -1,0 +1,33 @@
+@import "./utils/colors";
+@import "./utils/fonts";
+@import "./utils/resets";
+@import "./utils/mixin";
+@import "./components/header";
+@import "./components/index-main";
+@import "./components/footer";
+@import "./components/order";
+@import "./components/portfolio";
+@import "./components/mobile-menu";
+
+body {
+  background-color: $white;
+  color: $primary-text;
+  font-size: map-get($font-size, standard);
+  letter-spacing: map-get($letter-spacing, standard);
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,164 @@
+.backdrop {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $backdrop-background;
+  position: fixed;
+  transition: all 250ms ease-in;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 250ms ease-in;
+}
+.order {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: $white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 10px;
+  color: $primary-text;
+  &__header {
+    display: flex;
+  }
+  &__title {
+    font-size: map-get($font-size, ordermodal);
+    font-weight: map-get($font-weight, bold);
+    line-height: 1.172;
+    color: $secondary-text;
+    margin: 40px 0 20px 0;
+  }
+  &__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #ffffff;
+    border: 1px solid $order-border;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+  &__input {
+    width: 448px;
+    height: 40px;
+    display: block;
+    border: $order-background 1px solid;
+    margin: 4px 0 0 0;
+    border-radius: 4px;
+    padding: 0 0 0 32px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon {
+    fill: $secondary-text;
+    width: 15px;
+    height: 13px;
+    position: absolute;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &-person-placement {
+      top: 125px;
+      left: 56px;
+    }
+    &-phone-placement {
+      top: 194px;
+      left: 56px;
+    }
+    &-email-placement {
+      top: 262px;
+      left: 56px;
+    }
+  }
+  &__comment {
+    resize: none;
+    font-size: map-get($font-size, enlarged);
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__terms-contitions {
+    font-size: 14px;
+    padding: 10px 0 20px 0;
+    & input {
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0;
+    }
+    & input:checked ~ .order__checkmark {
+      background-color: $hover-blue;
+      border: none;
+    }
+    :checked ~ .order__checkmarm::after {
+      display: block;
+    }
+  }
+  &__tick {
+    fill: $white;
+    width: 11px;
+    height: 8px;
+    position: absolute;
+    left: 60px;
+    top: 458px;
+    z-index: 999;
+  }
+  &__checkmark {
+    position: absolute;
+    cursor: pointer;
+    left: 70px;
+    top: 454px;
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    background-color: $white;
+    border: $secondary-text 2px solid;
+  }
+  &__hover:hover > .order__input,
+  &__hover:focus > .order__input,
+  &__hover:active > .order__input {
+    border: $hover-blue 1px solid;
+    box-shadow: none;
+    outline: none;
+  }
+  &__hover:hover > .order__icon,
+  &__hover:focus > .order__icon,
+  &__hover:active > .order__icon {
+    fill: $hover-blue;
+  }
+  &__comment:hover,
+  &__comment:focus,
+  &__comment:active {
+    border: $hover-blue 1px solid;
+    box-shadow: none;
+    outline: none;
+  }
+  &__comment::placeholder {
+    color: $placeholder-text;
+  }
+  &__links {
+    color: $hover-blue;
+    text-decoration: underline;
+  }
+  &__button {
+    width: 200px;
+    height: 50px;
+    background-color: $hover-blue;
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0, 06em;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+  }
+}
