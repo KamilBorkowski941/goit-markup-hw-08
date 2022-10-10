@@ -33,7 +33,6 @@
     display: flex;
     flex-direction: column;
     gap: 36px;
-
     &-link {
       color: $secondary-text;
       text-decoration: none;
@@ -45,40 +44,40 @@
         color: $hover-blue;
       }
     }
-    &__links {
-      display: flex;
-      flex-direction: column;
-      gap: 64px;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &-phone {
+      font-size: 34px;
+      font-weight: map-get($font-weight, medium);
+      color: $hover-blue;
     }
-    &__contacts {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-      &-phone {
-        font-size: 34px;
-        font-weight: map-get($font-weight, medium);
-        color: $hover-blue;
-      }
-      &-email {
-        font-size: 24px;
-        font-weight: map-get($font-weight, medium);
-        color: $primary-text;
-      }
+    &-email {
+      font-size: 24px;
+      font-weight: map-get($font-weight, medium);
+      color: $primary-text;
     }
-    &__socials {
-      display: flex;
-      flex-direction: row;
-      gap: 10px;
-      &-link {
-        font-size: map-get($font-size, cardheader);
-        color: $hover-blue;
-        font-weight: map-get($font-weight, medium);
-      }
+  }
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    &-link {
+      font-size: map-get($font-size, cardheader);
+      color: $hover-blue;
+      font-weight: map-get($font-weight, medium);
     }
-    &__close {
-      width: 19px;
-      height: 19px;
-    }
+  }
+  &__close {
+    width: 19px;
+    height: 19px;
   }
 }
 .menu-toggle {

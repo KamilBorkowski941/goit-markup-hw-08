@@ -51,11 +51,11 @@
     height: 30px;
   }
   &__input {
-    width: 370px;
+    width: 350px;
     height: 40px;
     display: block;
     border: $order-background 1px solid;
-    margin: 4px 0 0 0;
+    margin: 4px 10 0 10;
     border-radius: 4px;
     padding: 0 0 0 30px;
     outline: none;
@@ -83,7 +83,7 @@
   &__comment {
     resize: none;
     font-size: map-get($font-size, enlarged);
-    width: 370px;
+    width: 350px;
     height: 120px;
     padding: 12px 16px;
     border-radius: 4px;
@@ -93,6 +93,7 @@
   &__terms-contitions {
     font-size: 14px;
     padding: 10px 0 20px 0;
+    flex-wrap: wrap;
     & input {
       position: absolute;
       opacity: 0;

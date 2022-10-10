@@ -1552,11 +1552,11 @@ footer {
   height: 30px;
 }
 .order__input {
-  width: 370px;
+  width: 350px;
   height: 40px;
   display: block;
   border: rgba(33, 33, 33, 0.2) 1px solid;
-  margin: 4px 0 0 0;
+  margin: 4px 10 0 10;
   border-radius: 4px;
   padding: 0 0 0 30px;
   outline: none;
@@ -1586,7 +1586,7 @@ footer {
 .order__comment {
   resize: none;
   font-size: 16px;
-  width: 370px;
+  width: 350px;
   height: 120px;
   padding: 12px 16px;
   border-radius: 4px;
@@ -1597,6 +1597,8 @@ footer {
 .order__terms-contitions {
   font-size: 14px;
   padding: 10px 0 20px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .order__terms-contitions input {
   position: absolute;
@@ -2040,7 +2042,7 @@ footer {
 .mobile__menu-link:hover, .mobile__menu-link:focus {
   color: #2196f3;
 }
-.mobile__menu__links {
+.mobile__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2050,7 +2052,7 @@ footer {
           flex-direction: column;
   gap: 64px;
 }
-.mobile__menu__contacts {
+.mobile__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2060,17 +2062,17 @@ footer {
           flex-direction: column;
   gap: 32px;
 }
-.mobile__menu__contacts-phone {
+.mobile__contacts-phone {
   font-size: 34px;
   font-weight: 500;
   color: #2196f3;
 }
-.mobile__menu__contacts-email {
+.mobile__contacts-email {
   font-size: 24px;
   font-weight: 500;
   color: #757575;
 }
-.mobile__menu__socials {
+.mobile__socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2080,12 +2082,12 @@ footer {
           flex-direction: row;
   gap: 10px;
 }
-.mobile__menu__socials-link {
+.mobile__socials-link {
   font-size: 18px;
   color: #2196f3;
   font-weight: 500;
 }
-.mobile__menu__close {
+.mobile__close {
   width: 19px;
   height: 19px;
 }
