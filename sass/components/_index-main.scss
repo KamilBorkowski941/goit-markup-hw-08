@@ -29,7 +29,7 @@
     font-weight: map-get($font-weight, bold);
     letter-spacing: map-get($letter-spacing, header);
     height: 50px;
-    width: 200px;
+    width: 150px;
     cursor: pointer;
   }
 }
@@ -181,7 +181,7 @@
       font-weight: map-get($font-weight, bold);
       letter-spacing: map-get($letter-spacing, header);
       height: 50px;
-      width: 200px;
+      width: 150px;
       cursor: pointer;
     }
     button:hover,
@@ -267,6 +267,10 @@
       box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
         0px 2px 1px rgb(0 0 0 / 20%);
       border-radius: 0px 0px 4px 4px;
+      &-pic {
+        max-width: 960px;
+        min-height: 320px;
+      }
     }
     & > li {
       flex-basis: calc((100% - 120px) / 4);
@@ -331,17 +335,13 @@
   }
 }
 @media (min-width: 1200px) {
-  .whole-page {
-    width: 1600px;
-    margin: 0 auto;
-    background-color: white;
-  }
   .top-section {
     background-image: url("../images/main/solution-background.jpg");
     background-color: $background-top-mix;
     background-blend-mode: difference;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: auto;
     width: 100%;
 
     &__container {
@@ -396,8 +396,11 @@
     @include flexcenter(row);
     gap: 30px;
     padding: 94px 0 0 0;
-    justify-content: space-between;
-
+    justify-content: center;
+    flex-wrap: nowrap;
+    & > li {
+      flex-basis: calc((100% - 120px) / 4);
+    }
     &__icon {
       @include flexcenter(row);
     }
@@ -410,6 +413,9 @@
     &__text {
       line-height: 1.71;
     }
+  }
+  .mobile-hidden-part {
+    display: initial;
   }
   .our-services {
     @include flexcenter(row);
@@ -442,6 +448,11 @@
       box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
         0px 2px 1px rgb(0 0 0 / 20%);
       border-radius: 0px 0px 4px 4px;
+      width: 270px;
+      &-pic {
+        max-width: 960px;
+        min-height: 320px;
+      }
     }
     &__list-name {
       margin: 30px 0 10px 0;
@@ -451,7 +462,7 @@
       line-height: 1.1875;
     }
     &__list-proffesion {
-      margin: 0 0 30px 0;
+      margin: 0 0 16px 0;
       line-height: 1.1875;
       font-size: map-get($font-size, enlarged);
     }
@@ -462,7 +473,6 @@
     }
     &__icons {
       display: flex;
-      justify-content: center;
       margin: 16px 0 30px 0;
       grid-gap: 10px;
     }
