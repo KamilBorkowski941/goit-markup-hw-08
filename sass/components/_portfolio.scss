@@ -1,8 +1,10 @@
 .filter {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 8px;
   margin-top: 94px;
+  flex-wrap: wrap;
+
   &__button {
     background-color: $background-crew;
     border-width: 0;
@@ -13,6 +15,7 @@
     border-radius: 3px;
     padding: 6px 22px;
     font-family: "Roboto";
+
     &:hover,
     :focus {
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -35,8 +38,10 @@
     border: 1px solid $border;
     flex-basis: calc((100% - 90px) / 3);
     height: 404px;
+    width: 450px;
     margin: 0;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     :focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -68,6 +73,7 @@
   height: 294px;
   position: absolute;
   overflow: hidden;
+
   &:hover {
     .product-descrip-popup {
       transform: translateY(0);
@@ -86,4 +92,23 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
   background-color: $popup-portfolio;
+}
+
+@media (min-width: 584px) {
+  .filter {
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .product {
+    &__part {
+      width: 354px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .filter {
+    display: flex;
+    justify-content: center;
+  }
 }

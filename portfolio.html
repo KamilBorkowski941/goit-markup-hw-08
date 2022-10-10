@@ -23,16 +23,18 @@
           <a href="index.html" class="header__logo"
             ><span class="header__logo-style">Web</span>Studio</a
           >
-          <nav>
+          <nav class="header__nav-size">
             <ul class="header__nav">
               <li>
-                <a href="index.html" class="header__nav-style"> Agency</a>
-              </li>
-              <li>
                 <a
-                  href="./portfolio.html"
+                  href="index.html"
                   class="header__nav-style header__nav-active"
                 >
+                  Agency</a
+                >
+              </li>
+              <li>
+                <a href="./portfolio.html" class="header__nav-style">
                   Portfolio</a
                 >
               </li>
@@ -62,6 +64,19 @@
               >
             </li>
           </ul>
+          <button
+            class="header__mobile js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="header__mobile-menu">
+              <use
+                href="./images/icons.svg#icon-menu-svg"
+                width="26"
+                height="16"
+              ></use>
+            </svg>
+          </button>
         </div>
       </header>
       <div class="header-border"></div>
@@ -364,7 +379,7 @@
       </main>
       <footer>
         <div class="container footer">
-          <div>
+          <div class="footer__container">
             <a href="./index.html" class="footer__logo"
               ><span class="footer__logo-color">Web</span>Studio</a
             >
@@ -423,28 +438,86 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="footer__container">
             <h4 class="footer__header-sign-up">Sign Up for newsletter</h4>
-            <div class="footer__flex">
-              <input type="text" class="footer__sign-up" placeholder="E-mail" />
-              <button type="submit" class="footer__button">
-                Sign up
-                <svg class="footer__button-logo">
-                  <use
-                    xlink:href="./images/icons.svg#sign-up-button"
-                    width="24"
-                    height="24"
-                    x="20"
-                    y="0"
-                  ></use>
-                </svg>
-              </button>
-            </div>
+            <input type="text" class="footer__sign-up" placeholder="E-mail" />
+            <button type="submit" class="footer__button">
+              Sign up
+              <svg class="footer__button-logo">
+                <use
+                  xlink:href="./images/icons.svg#sign-up-button"
+                  width="24"
+                  height="24"
+                  x="20"
+                  y="0"
+                ></use>
+              </svg>
+            </button>
           </div>
         </div>
       </footer>
+      <div class="mobile js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="mobile__close">
+            <use
+              xlink:href="./images/icons.svg#icon-close-mobile"
+              width="18.67"
+              height="18.67"
+            ></use>
+          </svg>
+        </button>
+        <ul class="mobile__menu">
+          <li><a href="./index.html" class="mobile__menu-link">Agency</a></li>
+          <li>
+            <a href="./portfolio.html" class="mobile__menu-link">Portfolio</a>
+          </li>
+          <li>
+            <a href="./contacts.html" class="mobile__menu-link">Contacts</a>
+          </li>
+        </ul>
+        <div class="mobile__links">
+          <ul class="mobile__contacts">
+            <li>
+              <a href="tel:+48111111111" class="mobile__contacts-phone"
+                >+48 111 111 111</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobile__contacts-email"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile__socials">
+            <li>
+              <a href="https://instagram.com" class="mobile__socials-link"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile__socials-link">|</li>
+            <li>
+              <a href="https://twitter.com" class="mobile__socials-link"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile__socials-link">|</li>
+            <li>
+              <a href="https://facebook.com" class="mobile__socials-link"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile__socials-link">|</li>
+            <li>
+              <a href="https://linkedin.com" class="mobile__socials-link"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
   <!--plik jest poprawnie tłumaczony na angielski przy użyciu tłumacza wbudowanego przeglądarki google-->
 </html>

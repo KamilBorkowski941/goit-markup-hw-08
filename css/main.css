@@ -704,10 +704,6 @@
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  .our-crew__members-pic {
-    max-width: 960px;
-    min-height: 320px;
-  }
   .our-crew > li {
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
@@ -983,10 +979,6 @@
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 270px;
-  }
-  .our-crew__members-pic {
-    max-width: 960px;
-    min-height: 320px;
   }
   .our-crew__list-name {
     margin: 30px 0 10px 0;
@@ -1463,7 +1455,7 @@ footer {
   .footer__button {
     background-color: #2196f3;
     color: #fff;
-    width: 150px;
+    width: 200px;
     height: 50px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1874,11 +1866,13 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   gap: 8px;
   margin-top: 94px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .filter__button {
   background-color: #f5f4fa;
@@ -1926,6 +1920,7 @@ footer {
   -ms-flex-preferred-size: calc((100% - 90px) / 3);
       flex-basis: calc((100% - 90px) / 3);
   height: 404px;
+  width: 450px;
   margin: 0;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1982,6 +1977,28 @@ footer {
   background-color: rgba(33, 150, 243, 0.9019607843);
 }
 
+@media (min-width: 584px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .product__part {
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media (max-width: 767px) {
   .menu {
     display: none;
