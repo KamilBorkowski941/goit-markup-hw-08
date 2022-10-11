@@ -18,7 +18,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 95%;
   min-height: 581px;
   background-color: $white;
   align-items: center;
@@ -51,7 +51,7 @@
     height: 30px;
   }
   &__input {
-    width: 350px;
+    min-width: 320px;
     height: 40px;
     display: block;
     border: $order-background 1px solid;
@@ -83,7 +83,7 @@
   &__comment {
     resize: none;
     font-size: map-get($font-size, enlarged);
-    width: 350px;
+    min-width: 310px;
     height: 120px;
     padding: 12px 16px;
     border-radius: 4px;
@@ -153,6 +153,8 @@
   &__links {
     color: $hover-blue;
     text-decoration: underline;
+    flex-wrap: wrap;
+    min-width: 320px;
   }
   &__button {
     width: 200px;
@@ -170,6 +172,7 @@
 }
 @media (min-width: 500px) {
   .order {
+    max-width: 95%;
     width: 528px;
     &__input {
       width: 448px;
