@@ -1,5 +1,5 @@
 .top-section {
-  background-image: url("../images/main/solution-background-mobile.jpg");
+  background-image: url("../images/main/solution-background-mobile@1x.jpg");
   background-color: $background-top-mix;
   background-blend-mode: difference;
   background-position: center;
@@ -160,9 +160,17 @@
 .crew-background {
   background-color: $background-crew;
 }
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .top-section {
+    background-image: linear-gradient(to right, #2f303a66 0%, #2f303a66 100%),
+      url("../images/main/solution-background-mobile@2x.jpg");
+  }
+}
 @media (min-width: 768px) {
   .top-section {
-    background-image: url("../images/main/solution-background-768.jpg");
+    background-image: url("../images/main/solution-background-768@1x.jpg");
 
     &__container {
       padding: 200px 0;
@@ -228,9 +236,17 @@
     background-color: $background-crew;
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .top-section {
+    background-image: linear-gradient(to right, #2f303a66 0%, #2f303a66 100%),
+      url("../images/main/solution-background-768@2x.jpg");
+  }
+}
 @media (min-width: 1200px) {
   .top-section {
-    background-image: url("../images/main/solution-background.jpg");
+    background-image: url("../images/main/solution-background@1x.jpg");
     background-size: auto;
   }
   .block {
@@ -291,5 +307,13 @@
   }
   .crew-background {
     background-color: $background-crew;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .top-section {
+    background-image: linear-gradient(to right, #2f303a66 0%, #2f303a66 100%),
+      url("../images/main/solution-background@2x.jpg");
   }
 }

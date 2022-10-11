@@ -185,7 +185,7 @@
   }
 }
 .top-section {
-  background-image: url("../images/main/solution-background-mobile.jpg");
+  background-image: url("../images/main/solution-background-mobile@1x.jpg");
   background-color: rgba(47, 48, 58, 0.4);
   background-blend-mode: difference;
   background-position: center;
@@ -436,9 +436,15 @@
   background-color: #f5f4fa;
 }
 
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .top-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/solution-background-mobile@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/main/solution-background-mobile@2x.jpg");
+  }
+}
 @media (min-width: 768px) {
   .top-section {
-    background-image: url("../images/main/solution-background-768.jpg");
+    background-image: url("../images/main/solution-background-768@1x.jpg");
   }
   .top-section__container {
     padding: 200px 0;
@@ -538,9 +544,15 @@
     background-color: #f5f4fa;
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .top-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/solution-background-768@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/main/solution-background-768@2x.jpg");
+  }
+}
 @media (min-width: 1200px) {
   .top-section {
-    background-image: url("../images/main/solution-background.jpg");
+    background-image: url("../images/main/solution-background@1x.jpg");
     background-size: auto;
   }
   .block__header {
@@ -607,6 +619,12 @@
   }
   .crew-background {
     background-color: #f5f4fa;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .top-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/solution-background@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/main/solution-background@2x.jpg");
   }
 }
 footer {
