@@ -10,10 +10,15 @@
 @import "./components/mobile-menu";
 
 body {
-  background-color: $white;
+  background-color: $background-page;
   color: $primary-text;
   font-size: map-get($font-size, standard);
   letter-spacing: map-get($letter-spacing, standard);
+}
+.whole-page {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: $white;
 }
 .container {
   width: 100%;

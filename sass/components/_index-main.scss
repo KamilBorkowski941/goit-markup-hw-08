@@ -81,7 +81,10 @@
 .our-crew {
   @include flexcenter(column);
   gap: 30px;
-
+  &__container {
+    min-width: 320px;
+    margin: auto;
+  }
   &__members {
     @include flexcenter(column);
     text-align: center;
@@ -91,6 +94,10 @@
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
       0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 0px 0px 4px 4px;
+    &-pic {
+      width: 100%;
+      height: auto;
+    }
   }
   &__list-name {
     margin: 30px 0 10px 0;
@@ -150,6 +157,9 @@
     }
   }
 }
+.crew-background {
+  background-color: $background-crew;
+}
 @media (min-width: 768px) {
   .top-section {
     background-image: url("../images/main/solution-background-768.jpg");
@@ -198,7 +208,7 @@
       @include flexcenter(column);
     }
     & > li {
-      flex-basis: calc((100% - 120px) / 4);
+      flex-basis: calc((100% - 30px) / 2);
     }
     &__list-proffesion {
       margin: 0 0 30px 0;
@@ -213,6 +223,9 @@
       width: 226px;
       height: 92px;
     }
+  }
+  .crew-background {
+    background-color: $background-crew;
   }
 }
 @media (min-width: 1200px) {
@@ -260,6 +273,9 @@
     &__members {
       width: 270px;
     }
+    & > li {
+      flex-basis: calc((100% - 120px) / 4);
+    }
     &__list-proffesion {
       margin: 0 0 16px 0;
     }
@@ -272,5 +288,8 @@
       width: 170px;
       height: 92px;
     }
+  }
+  .crew-background {
+    background-color: $background-crew;
   }
 }
