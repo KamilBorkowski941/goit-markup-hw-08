@@ -49,6 +49,7 @@
   border: none;
 }
 .header__mobile-menu {
+  margin-right: 10px;
   width: 24px;
   height: 16px;
   fill: #212121;
@@ -307,6 +308,7 @@
 }
 .about-us__text {
   line-height: 1.71;
+  padding-right: 10px;
 }
 
 .mobile-hidden-part {
@@ -328,6 +330,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+  max-width: 95%;
 }
 .our-crew__container {
   min-width: 320px;
@@ -348,7 +351,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  width: 100%;
   max-width: 450px;
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -412,7 +414,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 30px;
+  gap: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -739,11 +741,12 @@ footer {
   background-color: #000;
   border: solid rgba(255, 255, 255, 0.3019607843) 1px;
   border-radius: 4px;
-  width: 100%;
+  min-width: 310px;
+  width: 90%;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
   padding: 16px;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
   font-size: 16px;
 }
 .footer__flex {

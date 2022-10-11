@@ -81,11 +81,12 @@ footer {
     background-color: $black-logo;
     border: solid $footer-border 1px;
     border-radius: 4px;
-    width: 100%;
+    min-width: 310px;
+    width: 90%;
     height: 50px;
     color: $footer-link;
     padding: 16px;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
     font-size: 16px;
   }
   &__flex {
